@@ -1,19 +1,11 @@
 <!-- sidebar -->
 <aside class="sidebar" role="complementary" style="text-align:center;">
 	
-	<!-- /92947493/300X250_CFD -->
-	<div id='div-gpt-ad-1430935394858-4' style='width:300px;margin:0 auto;padding:5px 0;display:block;'>
-		<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-4'); });
-		</script>
-	</div>
+	<!-- ADS 300X250 A -->
+	<div id="mtrectanguleA"></div>
 
-	<!-- /92947493/300X250_CFD_sidebar_2 -->
-	<div id='div-gpt-ad-1430935394858-5' style='width:300px;margin:0 auto;padding:5px 0;display:block;'>
-		<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-5'); });
-		</script>
-	</div>
+	<!-- ADS 300X250 B -->
+	<div id="mtrectanguleB"></div>
 	
 	<div class="sidebar-widget">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>

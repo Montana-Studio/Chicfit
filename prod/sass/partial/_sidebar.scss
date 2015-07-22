@@ -1,6 +1,6 @@
 .container-sidebar {
 	@extend .no-paddings;
-	@include gridle(4,desktopess);
+	@include gridle(4,desktopess notebook-min);
 	@include gridle(12,phoness-min);
 	margin:20px 0;
 	height:auto;

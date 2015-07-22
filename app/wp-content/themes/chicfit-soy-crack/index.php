@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 
-<!-- /92947493/728X90_CFD -->
-<div id='div-gpt-ad-1430935394858-7' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-7'); });
-</script>
-</div>
+<!-- ADS 728X90 NORMAL -->
+<div id="mtskycrapperA"></div>
 
 <!--SLIDER CONTENT-->
 <div id='slider' class='swipe'>
@@ -34,12 +30,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-7');
 	<div class="btn_next" onclick='mySwipe.next()'><i class="fa fa-chevron-right"></i></div>
 </div>
 
-<!-- /92947493/970x90_CFD -->
-<div id='div-gpt-ad-1430935394858-9' style='width:970px;margin:0 auto -40px;display:block;clear:both;padding:5px 0;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-9'); });
-</script>
-</div>
+<!-- ADS 970X90 NORMAL -->
+<div id="mthiA"></div>
 
 <!-- LOOP DESTACADOS -->
 <div class="destacados">
@@ -78,12 +70,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-9');
 
 <!--CONTENT WRAP -->
 
-<!-- /92947493/728x90_CFD_cont -->
-<div id='div-gpt-ad-1430935394858-8' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-8'); });
-</script>
-</div>
+<!-- ADS 728X90 CONTENT -->
+<div id="mtskycrapperB"></div>
 
 <!-- LOOP MÁS RECIENTES -->
 <div class="content-loop-home">
@@ -91,7 +79,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-8');
 
 			<div id="reciente" class="item-principal">
 				<div class="bg-color">
-					<h2>LO MAS RECIENTE</h2>
+					<h2>LO MÁS RECIENTE</h2>
 					<nav class="tags">
 						<?php html5blank_nav(); ?>
 					</nav>	

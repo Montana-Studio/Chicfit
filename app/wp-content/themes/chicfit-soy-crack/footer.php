@@ -51,8 +51,8 @@
 
 						<div class="four-box">
 							<ul>
-								<li><a href="mailto:alvaro@mediatrends.cl"><i class="fa fa-envelope-o"></i> CONTACTO PUBLICITARIO</a></li>
-								<li><a href="mailto:chicfitdaily@gmail.com"><i class="fa fa-envelope-o"></i> CONTACTO EDITORIAL</a></li>
+								<li><a href="mailto:ignacia&#64;chicfit.cl"><i class="fa fa-envelope-o"></i> CONTACTO PUBLICITARIO</a></li>
+								<li><a href="mailto:chicfitdaily&#64;gmail.com"><i class="fa fa-envelope-o"></i> CONTACTO EDITORIAL</a></li>
 								<li><a href="about-us"><i class="fa fa-heart-o"></i> ABOUT US</a></li>
 							</ul>
 						</div>
@@ -61,23 +61,7 @@
 				
 			</footer>
 
-			<div style="width:1570px;position:fixed;margin:0 auto;left:0;right:0;top:36px;z-index:1;">
-				
-							<!-- /92947493/160X600_CFD -->
-				<div id='div-gpt-ad-1430935394858-2'style='width:160px;float:left;'>
-				<script type='text/javascript'>
-				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-2'); });
-				</script>
-				</div>
-
-				<!-- /92947493/160x600_CFD_right -->
-				<div id='div-gpt-ad-1430935394858-3' style='width:160px;float:right;'>
-				<script type='text/javascript'>
-				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-3'); });
-				</script>
-				</div>
-
-			</div>
+			<div style="width:1570px;position:fixed;margin:0 auto;left:0;right:0;top:36px;z-index:1;"></div>
     
 			<!-- /footer -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.marquee.js"></script>

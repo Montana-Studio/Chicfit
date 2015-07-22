@@ -2,6 +2,8 @@
 
 <?php get_header(); ?>
 
+<!-- ADS 970X90 NORMAL -->
+<div id="mthiA"></div>
 
 <!-- LOOP DESTACADOS -->
 <div class="destacados destaca-mobile">
@@ -34,6 +36,7 @@
 </div>
 <!-- / LOOP DESTACADOS -->
 
+<div id="mtskycrapperB"></div>
 
 <!--CONTENT WRAP -->
 <!-- LOOP MÁS RECIENTES -->
