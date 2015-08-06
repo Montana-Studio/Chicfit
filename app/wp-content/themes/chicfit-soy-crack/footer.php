@@ -31,10 +31,7 @@
 
 						<div class="second-box">
 							<div class="newsletter">
-								<!--h4>Newsletter</h4>
-								<input type="search" name="s" placeholder="<?php _e( '', 'html5blank' ); ?>"><a class="send" href="">Enviar</a-->
-
-								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('newsletter')) ?>
+								<iframe width="100%" height="auto" allowTransparency="true" frameborder="0" scrolling="no" style="border:none" src="http://local.mediatrends/Chicfit/app/wp-content/plugins/myMail/form.php?id=0&s=1"></iframe>
 							</div>
 						</div>
 						

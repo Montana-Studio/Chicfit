@@ -1,0 +1,7 @@
+Error log created
+2015-07-29 17:37:48: Campaign send initiated -> Started sending 1 mails for campaign 1 at 2015-07-29 17:37:48
+2015-07-29 17:37:49: Campaign send ended -> Ended sending campaign 1 at 2015-07-29 17:37:49
+2015-07-29 17:43:56: Campaign send initiated -> Started sending 1 mails for campaign 2 at 2015-07-29 17:43:56
+2015-07-29 17:43:56: Campaign send ended -> Ended sending campaign 2 at 2015-07-29 17:43:56
+2015-07-29 17:45:59: Campaign send initiated -> Started sending 1 mails for campaign 3 at 2015-07-29 17:45:59
+2015-07-29 17:45:59: Campaign send ended -> Ended sending campaign 3 at 2015-07-29 17:45:59
