@@ -6,7 +6,7 @@
 	font:{family:$primary_font;}
 	color:#fff;
 	position: relative;	
-	height: $height-footer;
+	//height: $height-footer;
 	margin: {top:-$height-footer;}
 	.footer-content {
 		@include gridle(12);
