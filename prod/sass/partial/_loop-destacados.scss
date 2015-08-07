@@ -83,6 +83,7 @@
 				color:#fff;
 				list-style: none;
 				display: block;
+				text:{transform:uppercase;}
 				@include gridle_state(desktopess notebook-min){
 					display: block;
 				}

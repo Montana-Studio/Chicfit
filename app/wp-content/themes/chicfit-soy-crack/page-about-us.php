@@ -23,9 +23,11 @@
 		<?php else: ?>
 		<?php endif; ?>
 
+		<div class="container-sidebar">
+			<?php get_sidebar(); ?>
+		</div>
+
 		</section>
 		<!-- /section -->
 	</main>
-
-
 <?php get_footer(); ?>

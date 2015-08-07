@@ -86,7 +86,7 @@
 				}
 				.newsletter {
 					@include gridle(12);
-					padding:{bottom: 20px;}
+					position: relative;
 					@include gridle_state(phoness-min){
 						padding:{bottom:0;}
 					}
@@ -170,6 +170,9 @@
 						@include gridle(12,desktopess notebook-min);
 						height: auto;
 						float: none;
+						@include gridle_state(desktopess, notebook-min) {
+							padding:{top: 15px !important;}
+						}
 						li {
 							@extend .no-paddings;
 							@extend .text-center;

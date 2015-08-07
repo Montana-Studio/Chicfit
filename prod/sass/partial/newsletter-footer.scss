@@ -1,0 +1,127 @@
+.newsletter-grid {
+	@include gridle(5);
+	@include gridle_float(left);
+	display: inline-block;
+	padding:{left:0; right: 10px;}
+	@include gridle_state(tabless-md) {
+		padding: 0 10px !important;
+	}
+	@include gridle_state(phoness-min) {
+		display: block;		
+		width: 100%;
+		float: none;
+	}
+	h4 {
+		margin:{top:0;}
+	}
+	label {
+		color: $third_color_2;
+		font:{size:11px;} 
+		margin:0 20px; 
+		text:{transform:uppercase;} 
+		font:{weight:bold;} 
+		padding: {top:5px;bottom:5px;}
+		margin:0;
+		.required {
+			color:$second_color !important;
+		}
+	}
+	input {
+		border: 1px solid $third_color_2;
+		background: none;
+		outline:none !important;
+		color:$third_color_2 !important;
+		padding: 0 5px;
+		@include placeholder {
+			background: none !important;
+			color:$third_color_2 !important;
+			outline: none !important;
+		}
+	}
+}
+.mymail-form {
+	.mymail-wrapper {
+		&.mymail-email-wrapper {
+			@extend .newsletter-grid;
+		}
+		&.mymail-firstname-wrapper {
+			@extend .newsletter-grid;
+		} 
+		label {
+			text-align: left;
+    		display: block;
+		}
+		&.mymail-submit-wrapper {
+			@include gridle(2);
+			@extend .no-paddings;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			@include gridle_state(phoness-min) {
+				width: 93%;
+				position: relative;
+				display: block;
+				margin: 20px auto 0 auto !important;
+				float: none;
+			}
+			input {
+				@include gridle(12); 
+				padding: 4px 0;
+				margin: 0 !important;
+				background: none;
+				border: 1px solid $third_color_2;
+				color: $third_color_2;
+				font:{size:11px;} 
+				margin:0 20px; 
+				text:{transform:uppercase;} 
+				font:{weight:bold;} 
+				outline: none;
+			}
+			.submit-button {
+				  margin:{left: 0px !important;}
+				.button {
+					margin: 0 !important;
+				}	
+			} 
+		}
+	}
+	.mymail-form-info {
+		&.error {
+			background:{color:$second_color !important;}
+			display: inline-block;
+			@include gridle_state(phoness-min) {
+				font:{size: 12px;}
+			}
+			p {
+				@include gridle(6);
+				@include gridle(12, phoness-min);
+				margin-bottom: 0;
+				display: inline-block;
+				position: relative;
+				float: left;
+			}
+			ul {
+				@include gridle(6);
+				@include gridle(12, phoness-min);
+				@extend .no-paddings;
+				display: inline-block;
+				li {
+					@include gridle(6);
+					@include gridle(12, phoness-min);
+					@extend .no-paddings;
+					display: inline-block;
+					@include gridle_state(phoness-min) {
+						float: none;
+					}
+				}
+			}
+		}
+		&.success {
+			background:{color:$first_color !important;}
+		}
+	}
+	@include gridle_state(phoness-min) {
+		padding:{bottom: 20px;}
+	}
+}
+
