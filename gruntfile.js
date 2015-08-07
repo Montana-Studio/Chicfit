@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('Chicfit.json'),
 
-        www: 'app/wp-content/themes/chicfit-soy-crack',
+        www: 'app/wp-content/themes/chicfit-update',
         dist: 'prod',
         
         jsout:'js/chicfit.min.js',
