@@ -89,27 +89,19 @@
 		&.error {
 			background:{color:$second_color !important;}
 			display: inline-block;
-			@include gridle_state(phoness-min) {
-				font:{size: 12px;}
-			}
+			font:{size: 12px;}
 			p {
-				@include gridle(6);
-				@include gridle(12, phoness-min);
+				@include gridle(12);
 				margin-bottom: 0;
-				display: inline-block;
 				position: relative;
 				float: left;
 			}
 			ul {
-				@include gridle(6);
-				@include gridle(12, phoness-min);
+				@include gridle(12);
 				@extend .no-paddings;
-				display: inline-block;
 				li {
-					@include gridle(6);
-					@include gridle(12, phoness-min);
+					@include gridle(12);
 					@extend .no-paddings;
-					display: inline-block;
 					@include gridle_state(phoness-min) {
 						float: none;
 					}
