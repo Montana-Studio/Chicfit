@@ -630,4 +630,15 @@ $output .= "</div><div class='btn_prev' onclick='mySwipe.prev()'><i class='fa fa
 return $output;
 }
 
+//remove the http://
+function my_mymail_replace_link($link){
+    return str_replace( array('http://', 'https://'), '', $link);
+}
+add_filter('mymail_replace_link', 'my_mymail_replace_link');
+
+//add the http:/
+function my_mymail_click_target($target){
+    return strpos($target, 'http') !== 0 ? 'http://'.$target : $target;
+}
+add_filter('mymail_click_target', 'my_mymail_click_target');
 ?>
