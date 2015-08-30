@@ -61,7 +61,22 @@
 				
 			</footer>
 
-			<div style="width:1570px;position:fixed;margin:0 auto;left:0;right:0;top:36px;z-index:1;"></div>
+			<div style="width:1570px;position:fixed;margin:0 auto;left:0;right:0;top:36px;z-index:1;">
+				
+				<!--160X600_CFD-->
+				<div id='div-gpt-ad-1430935394858-2'style='width:160px;float:left;'>
+					<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-2'); });
+					</script> 
+				</div>
+
+				<!--160x600_CFD_right-->
+				<div id='div-gpt-ad-1430935394858-3' style='width:160px;float:right;'>
+					<script type='text/javascript'>
+						googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-3'); });
+					</script>
+				</div>
+			</div>
     
 			<!-- /footer -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.marquee.js"></script>
@@ -73,5 +88,12 @@
 
 		<?php wp_footer(); ?>
 		
+		<!--intersitial_CFD_ALL-->
+		<div id='div-gpt-ad-1431382352477-0'>
+			<script type='text/javascript'>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1431382352477-0'); });
+			</script>
+		</div>
+
 	</body>
 </html>

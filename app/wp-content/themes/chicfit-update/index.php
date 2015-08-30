@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
-<!-- ADS 728X90 NORMAL -->
-<div id="mtskycrapperA"></div>
+<!-- 728X90_CFD -->
+<div id='div-gpt-ad-1430935394858-7' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-7'); });
+	</script>
+</div>
 
 <!--SLIDER CONTENT-->
 <div id='slider' class='swipe'>
@@ -30,8 +34,12 @@
 	<div class="btn_next" onclick='mySwipe.next()'><i class="fa fa-chevron-right"></i></div>
 </div>
 
-<!-- ADS 970X90 NORMAL -->
-<div id="mthiA"></div>
+<!--970x250_CFD_ALL-->
+<div id='div-gpt-ad-1430935394858-9' style='width:970px;margin:0 auto -40px;display:block;clear:both;padding:5px 0;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-9'); });
+	</script>
+</div>
 
 <!-- LOOP DESTACADOS -->
 <div class="destacados">
@@ -70,8 +78,12 @@
 
 <!--CONTENT WRAP -->
 
-<!-- ADS 728X90 CONTENT -->
-<div id="mtskycrapperB"></div>
+<!-- 728x90_CFD_cont -->
+<div id='div-gpt-ad-1430935394858-8' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-8'); });
+	</script>
+</div>
 
 <!-- LOOP MÁS RECIENTES -->
 <div class="content-loop-home">

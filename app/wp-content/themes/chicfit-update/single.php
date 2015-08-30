@@ -23,7 +23,12 @@
 					</div>
 				</div>
 
-<div id="mt_hi_A"></div>
+<!--970x250_CFD_ALL-->
+<div id='div-gpt-ad-1430935394858-9' style='width:970px;margin:0 auto;display:block;clear:both;padding:5px 0;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-9'); });
+	</script>
+</div>
 
 				<div class="container-two">
 					
@@ -48,7 +53,12 @@
 
 						<?php comments_template( '', true ); // Remove if you don't want comments ?>
 					</div>
-
+<!-- 728x90_CFD_cont -->
+<div id='div-gpt-ad-1430935394858-8' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-8'); });
+	</script>
+</div>
 				</div>
 				<div class="container-sidebar">
 					<?php get_sidebar(); ?>
@@ -66,7 +76,5 @@
 		<?php endif; ?>
 </section>
 <!-- /SINGLE -->
-
-<div id="mt_skycrapper_B"></div>
 
 <?php get_footer(); ?>

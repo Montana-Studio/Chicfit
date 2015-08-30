@@ -77,7 +77,6 @@ class ShareaholicUtilities {
    */
   private static function defaults() {
     return array(
-      'disable_tracking' => 'off',
       'disable_admin_bar_menu' => 'off',
       'disable_debug_info' => 'off',
       'disable_internal_share_counts_api' => 'off',
@@ -327,7 +326,6 @@ class ShareaholicUtilities {
       global $wpdb;
       $results = $wpdb->query( "UPDATE $wpdb->postmeta SET `meta_key` = 'shareaholic_disable_open_graph_tags' WHERE `meta_key` = 'Hide OgTags'" );
       $results = $wpdb->query( "UPDATE $wpdb->postmeta SET `meta_key` = 'shareaholic_disable_share_buttons' WHERE `meta_key` = 'Hide SexyBookmarks'" );
-      self::update_options(array('disable_tracking' => 'off'));
       self::update_options(array('metakey_6to7_upgraded' => 'true'));
     }
     
@@ -363,12 +361,23 @@ class ShareaholicUtilities {
    * @return string
    */
   public static function asset_url($asset) {
-    if (preg_match('/spreadaholic/', Shareaholic::URL)) {
+    $env = self::get_env();
+    if ($env === 'development') {
       return "http://spreadaholic.com:8080/" . $asset;
-    } elseif (preg_match('/stageaholic/', Shareaholic::URL)) {
+    } elseif ($env === 'staging') {
       return '//d2062rwknz205x.cloudfront.net/' . $asset;
     } else {
       return '//dsms0mj1bbhn4.cloudfront.net/' . $asset;
+    }
+  }
+
+  public static function get_env() {
+    if (preg_match('/spreadaholic/', Shareaholic::URL)) {
+      return 'development';
+    } elseif (preg_match('/stageaholic/', Shareaholic::URL)) {
+      return 'staging';
+    } else {
+      return 'production';
     }
   }
   
@@ -885,7 +894,7 @@ class ShareaholicUtilities {
      if ($post == NULL) {
        return false;
      }
-     
+
      if (in_array($post->post_status, array('draft', 'pending', 'auto-draft'))) {
        // Get the correct permalink for a draft
        $my_post = clone $post;
@@ -913,8 +922,8 @@ class ShareaholicUtilities {
     *
     * @param string $domain
     */
-    public static function notify_content_manager_sitemap() {      
-      $text_sitemap_url = admin_url('admin-ajax.php') . '?action=shareaholic_permalink_list&n=500&format=text';
+    public static function notify_content_manager_sitemap() {
+      $text_sitemap_url = admin_url('admin-ajax.php') . '?action=shareaholic_permalink_list&n=1000&format=text';
       
       $cm_sitemap_job_url = Shareaholic::CM_API_URL . '/jobs/sitemap';
       $payload = array (
@@ -1261,6 +1270,19 @@ class ShareaholicUtilities {
 
     return 'SUCCESS';
   }
+
+
+  /**
+   * Call the content manager for a post before it is updated
+   *
+   * We do this because a user may change their permalink
+   * and so we tell CM that the old permalink is not longer valid
+   *
+   */
+  public static function before_post_is_updated($post_id) {
+    ShareaholicUtilities::notify_content_manager_singlepage(get_post($post_id));
+  }
+
 
   /**
    * This is a wrapper for the Recommendations API

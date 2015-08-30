@@ -2,8 +2,12 @@
 
 <?php get_header(); ?>
 
-<!-- ADS 970X90 NORMAL -->
-<div id="mthiA"></div>
+<!--970x250_CFD_ALL-->
+<div id='div-gpt-ad-1430935394858-9' style='width:970px;margin:0 auto -40px;display:block;clear:both;padding:5px 0;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-9'); });
+	</script>
+</div>
 
 <!-- LOOP DESTACADOS -->
 <div class="destacados destaca-mobile">
@@ -36,7 +40,12 @@
 </div>
 <!-- / LOOP DESTACADOS -->
 
-<div id="mtskycrapperB"></div>
+<!-- 728X90_CFD -->
+<div id='div-gpt-ad-1430935394858-7' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-7'); });
+	</script>
+</div>
 
 <!--CONTENT WRAP -->
 <!-- LOOP MÁS RECIENTES -->
@@ -100,4 +109,6 @@
 		</div>
 	</div>
 </div>
+
+
 <?php get_footer(); ?>
