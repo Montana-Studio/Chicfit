@@ -7,7 +7,8 @@ var feed = new Instafeed({
     limit:20
 });
 (function($) { 'use strict'; 
-	window.mySwipe = $('#slider').Swipe({
+	
+    window.mySwipe = $('#slider').Swipe({
 		speed:1000,
 		auto: 3000,
 		continuous: true,
@@ -44,19 +45,22 @@ var feed = new Instafeed({
             $(this).data('drag', false);
     });
 
+    //$('.content-menu').css({'height':0,'padding-bottom':'0'});
 
-    $('.pestana').swipe( {
+    $('.pestana').swipe({
         swipeDown:function() {
           $('.content-menu').animate({
-                height: 271,
+                height: 291,
                 'padding-bottom':50
             },{duration:500});
+          console.log('down');
         },
         swipeUp:function(){
             $('.content-menu').animate({
                 height:'0px',
                 'padding-bottom':0
             },{duration:500});
+            console.log('up');
         },
         //Default is 75px, set to 0 for demo so any distance triggers swipe
          //threshold:5

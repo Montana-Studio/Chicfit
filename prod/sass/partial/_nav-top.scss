@@ -182,9 +182,9 @@
 		@include gridle(12);
 		background:{color:$third_color} ;
 		color:#666;
-		padding:{top:45px;bottom:30px;}
+		padding:{top:45px;bottom:0;}
 		margin: {bottom:-2px;}
-		height:auto;
+		height:0;
 		overflow: hidden;
 		top:0;
 		position: relative;
