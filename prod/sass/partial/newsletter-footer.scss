@@ -31,7 +31,7 @@
 		background: none;
 		outline:none !important;
 		color:$third_color_2 !important;
-		padding: 0 5px;
+		padding:2px 4px;
 		@include placeholder {
 			background: none !important;
 			color:$third_color_2 !important;
@@ -66,7 +66,7 @@
 			}
 			input {
 				@include gridle(12); 
-				padding: 4px 0;
+				padding: 6px 0;
 				margin: 0 !important;
 				background: none;
 				border: 1px solid $third_color_2;
@@ -87,9 +87,10 @@
 	}
 	.mymail-form-info {
 		&.error {
-			background:{color:$second_color !important;}
+			background:none !important;
 			display: inline-block;
 			font:{size: 12px;}
+			color:$second_color;
 			p {
 				@include gridle(12);
 				margin-bottom: 0;
@@ -109,11 +110,16 @@
 			}
 		}
 		&.success {
-			background:{color:$first_color !important;}
+			background:none !important;
+			color:$second_color;
 		}
 	}
 	@include gridle_state(phoness-min) {
 		padding:{bottom: 20px;}
+	}
+	.mymail-loader {
+		display: none !important;
+		visibility: hidden !important; 
 	}
 }
 
