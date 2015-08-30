@@ -57,7 +57,7 @@
 
 		<div id="reciente" class="item-principal">
 			<div class="bg-color">
-				<h2>Fitness</h2>
+				<h2>Beauty</h2>
 				<nav class="tags">
 					<?php html5blank_nav(); ?>
 				</nav>	
