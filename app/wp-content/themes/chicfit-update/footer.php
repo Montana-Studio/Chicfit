@@ -61,7 +61,7 @@
 				
 			</footer>
 
-			<div style="width:1570px;position:fixed;margin:0 auto;left:0;right:0;top:36px;z-index:1;">
+			<div class="hi-impact-120x600">
 				
 				<!--160X600_CFD-->
 				<div id='div-gpt-ad-1430935394858-2'style='width:160px;float:left;'>

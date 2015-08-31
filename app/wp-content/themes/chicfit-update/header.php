@@ -19,6 +19,24 @@
 		
 
 		<?php wp_head(); ?>
+		
+		<style>
+			.hi-impact-120x600{
+				width:1570px;
+				position:fixed;
+				margin:0 auto;
+				left:0;
+				right:0;
+				top:36px;
+				z-index:1;
+			}
+			@media screen and (min-width:320px) and (max-width:1569px){
+				.hi-impact-120x600{
+					display:none;
+				}	
+			}
+			
+		</style>
 
         <!-- analytics -->
 		<script>
@@ -136,13 +154,13 @@
 		</div>
 		
 		<!--Masthead_CFD_ALL-->
-		<div id='div-gpt-ad-1430935394858-1' style="width:970px;margin:0 auto;display:block;clear:both;position:relative;z-index:99;padding:5px 0;">
+		<div id='div-gpt-ad-1430935394858-1' style="max-width:970px;margin:0 auto;display:block;clear:both;position:relative;z-index:99;padding:5px 0;">
 			<script type='text/javascript'>
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-1'); });
 			</script>
 		</div>
 
-		<div id='div-gpt-ad-1439316526729-0' style='width:970px;margin:0 auto;display:block;clear:both;position:relative;'>
+		<div id='div-gpt-ad-1439316526729-0' style='max-width:970px;margin:0 auto;display:block;clear:both;position:relative;'>
 			<script type='text/javascript'>
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1439316526729-0'); });
 			</script>

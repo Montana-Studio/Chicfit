@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <!--970x250_CFD_ALL-->
-<div id='div-gpt-ad-1430935394858-9' style='width:970px;margin:0 auto -40px;display:block;clear:both;padding:5px 0;'>
+<div id='div-gpt-ad-1430935394858-9' style='max-width:970px;margin:0 auto -40px;display:block;clear:both;padding:5px 0;'>
 	<script type='text/javascript'>
 		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-9'); });
 	</script>
@@ -44,7 +44,7 @@
 <!-- / LOOP DESTACADOS -->
 
 <!-- 728X90_CFD -->
-<div id='div-gpt-ad-1430935394858-7' style='width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
+<div id='div-gpt-ad-1430935394858-7' style='max-width:728px;margin:0 auto;padding:5px 0;clear:both;display:block;'>
 	<script type='text/javascript'>
 		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430935394858-7'); });
 	</script>
