@@ -1,3 +1,43 @@
+@keyframes movenews {
+    0% {
+		@include transform( perspective(800px) rotateX(-90deg));
+        opacity: 1;
+    } 
+    40% {
+        @include transform( perspective(800px) rotateX(30deg));
+        opacity: 1;
+    }
+    70% {
+         @include transform( perspective(800px) rotateX(-10deg));
+    }
+    100% {
+         @include transform( perspective(800px) rotateX(0deg));
+         opacity: 1;
+    }
+}
+@keyframes showDelay {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	50% {
+		visibility: visible;
+		opacity: 1;
+	}
+} 
+.animation-pop {
+	-moz-background-clip: padding;
+	-o-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #fff; 
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	-o-box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	@include animation(movenews 1.2s forwards);
+	@include transform-origin(top center);
+}
 .footer {
 	@include gridle(12,desktopess notebook-min);
 	@include gridle(12,phoness-min);
@@ -8,6 +48,345 @@
 	position: relative;	
 	//height: $height-footer;
 	margin: {top:-$height-footer;}
+	.bg-newsletter {
+		@include gridle(12);
+		@include gridle_float(none);
+		@extend .no-paddings; 
+		background: #000;
+		opacity: 0.6;
+		height: 100%;
+		width: 100%;
+	    position: fixed;
+	    z-index: 9999999999;
+	    top: 0;
+	    left: 0; 
+	    display: none;
+	}
+	.newsletter-new-suscribe {
+		@include gridle(12);
+		@include gridle_float(none);
+		@extend .no-paddings; 
+		@extend .text-center;
+		height: 100%;
+		width: 100%;
+	    position: fixed;
+	    z-index: 99999999999;
+	    top: 0;
+	    left:0;
+	    display: none;
+	    .content-popups {
+	    	@include gridle(5, desktopess);  
+	    	@include gridle(7, notebook-min);
+	    	@include gridle(9, tabless-min);
+	    	@include gridle(11, phoness-min phoness);
+	    	@include gridle_float(none); 
+			display: block;
+			margin:{top:10%;left:auto;bottom:0;right:auto;}
+			background: none;
+			position:absolute;
+			font:{family:$primary_font;}
+			padding:{left:0;bottom:0; right:0;}
+			left: 0;
+			right: 0;
+			@include gridle_state(phoness-min) {
+				margin:{top:20px;}
+			}
+			article {
+				.bg-color-popups {
+					position: absolute;
+				    height: 100%;
+				    width: 100%;
+				    z-index: 0;
+					background-size: cover;
+				}
+				.bg-content-popups {
+					@include gridle(12);
+					@extend .no-paddings;
+					z-index: 200;
+					.close-button-popups {
+						@include gridle(2);
+						@include gridle_float(right);
+						text-align: right;
+						cursor: pointer;
+						padding:{top: 10px !important;right: 15px !important;}
+						position: relative; 
+					}
+					.first-box-popups {
+				    	@include gridle(11);
+				    	@include gridle_float(none); 
+				    	@extend .text-left;
+				    	padding:{top:20px;bottom:20px;}
+				    	position: relative;
+				    	@include gridle_state(phoness-min) {
+							padding:{top:0;bottom:0;}
+						}
+				    	.content-first-box-pop {
+				    		@include gridle(4);
+				    		@include gridle(12, phoness-min);
+				    		@extend .no-paddings;
+					    	.logo {
+					    		@include gridle(12);
+				    			@include gridle_float(none); 
+								@extend .no-paddings;
+					    		svg {
+					    			fill:#FFF;
+					    		}
+					    	}
+					    	.title-content-p {
+					    		@include gridle(12);
+				    			@include gridle_float(none); 
+				    			@extend .no-paddings;
+								font:{size:40px;weight:bold;} 
+								line-height: 15px;
+					    	}	
+				    	}
+				    }
+				    .second-box-popups {
+				    	@include gridle(11);
+				    	@include gridle_float(none);
+				    	@extend .no-paddings;
+				    	.form-popups {
+				    		@include gridle(6);
+				    		@include gridle(12, phoness-min);
+				    		position: relative;
+				    		.mymail-form {
+								.mymail-wrapper {
+									&.mymail-email-wrapper {
+										@include gridle(12);
+										@extend .no-paddings;
+										@extend .text-left;
+										label {
+											color: #fff;
+											font:{style: italic;}
+											span {
+												&.required {
+													color:#FFF !important;
+												}
+											}
+										}
+										input{
+											@include gridle(12);
+											color:#fff;
+											border: 1px solid #fff;
+											height: 30px;
+											font:{size:15px;}
+											background: none;
+											outline: none;
+											@include placeholder{
+												color: #fff;	
+											}
+										}	
+									}	
+									&.mymail-firstname-wrapper {
+										@include gridle(12);
+										@extend .no-paddings;
+										@extend .text-left;
+										label {
+											color: #fff;
+											font:{style: italic;}
+											span {
+												&.required {
+													color:#FFF !important;
+												}
+											}
+										}
+										input {
+											@include gridle(12);
+											color:#fff;
+											border: 1px solid #fff;
+											height: 30px;
+											font:{size:15px;}
+											background: none;
+											outline: none;
+											@include placeholder{
+												color: #fff;	
+											}
+										}	
+									}
+									&.mymail-submit-wrapper {
+										@include gridle(12);
+										@extend .no-paddings;
+										position: relative;
+										margin: 10px 0;
+										@include gridle_state(phoness-min) {
+											margin:{top:10px !important;}
+										}
+										input {
+											@include gridle(12); 
+											padding: 9px 0;
+											margin: 0 !important;
+											background: $second_color_1;
+											color: #FFF;
+											font:{size:11px;} 
+											margin:0 20px; 
+											text:{transform:uppercase;} 
+											border:0;
+											font:{weight:bold;} 
+											outline: none;
+										}
+										.submit-button {
+											  margin:{left: 0px !important;}
+											.button {
+												margin: 0 !important;
+											}	
+										} 
+									}
+								}
+								.mymail-form-info {
+									&.error {
+										background:none !important;
+										display: inline-block;
+										font:{size: 12px;}
+										color:#FFF;
+										border:1px solid #FFF;
+										p {
+											@include gridle(12);
+											margin-bottom: 0;
+											position: relative;
+											float: left;
+										}
+										ul {
+											@include gridle(12);
+											@extend .no-paddings;
+											li {
+												@include gridle(12);
+												@extend .no-paddings;
+												@include gridle_state(phoness-min) {
+													float: none;
+												}
+											}
+										}
+									}
+									&.success {
+										background:none !important;
+										border:1px solid #FFF;
+										color:#FFF;
+									}
+								}
+								@include gridle_state(phoness-min) {
+									padding:{bottom: 20px;}
+								}
+								.mymail-loader {
+									display: none !important;
+									visibility: hidden !important; 
+								}
+							}
+				    	}
+				    	.texto-popups {
+				    		@include gridle(5);
+				    		@include gridle(12, phoness-min);
+				    		@include gridle_float(none);
+				    		padding:{top:10px;} 
+				    		position: relative;
+				    		@include gridle_state(phoness-min) {
+								padding:{top:0;} 
+							}
+				    		.mensaje-popups {
+				    			@include gridle(12);
+				    			@include gridle_float(none);
+				    			@extend .text-center;
+				    			h2 {
+									text:{transform: uppercase;}
+									font:{size: 15px;}
+									margin: 5px 0;
+									@include gridle_state(phoness-min) {
+										display: none;
+									}
+								}		
+				    			.mensaje-single {
+				    				font:{size:12px;}
+				    				margin:{bottom: 15px;}
+				    				@include gridle_state(phoness-min) {
+										display: none;
+									}
+				    			}
+				    		}
+				    		.social-popups {
+				    			@include gridle(12);
+				    			@include gridle_float(none);
+				    			@extend .text-center;
+				    			ul {
+									margin:0;
+									padding:0;
+									li {
+										height: 40px;
+										width: 40px;
+										border:{radius:50%;}
+										background:#FFF;
+										display: inline-block;
+										list-style: none;
+										margin: 0 5px !important;
+										@include gridle_state(phoness) {
+											height: 35px;
+											width: 35px;
+										}
+										a {
+											text:{align:center;}
+											height: inherit;
+											width: inherit;
+											display: table;
+											i {
+												display: table-cell;
+												vertical-align: middle;
+												color: $second_color;
+												font:{size: 24px;}
+												@include gridle_state(phoness) {
+													font:{size: 18px;} 
+												}	 
+											}
+										}
+									}
+								}
+				    		}
+						}
+				    }	
+				}
+			}
+		}	
+		.newsletter-footer {
+	    	@include gridle(5, desktopess);  
+	    	@include gridle(7, notebook-min);
+	    	@include gridle(9, tabless-min);
+	    	@include gridle(11, phoness-min phoness);
+	    	@include animation(showDelay 4.0s ease-in);
+	    	@include gridle_float(none); 
+	    	padding:0;
+	    	display: block;
+	    	margin:0 auto;
+		    .content-poweredby {
+				@include gridle(2, desktopess noteboo-min tabless-min);  
+				@include gridle(3, phoness);  
+				@include gridle(5, phoness-min);  
+				@include gridle_float(right);
+				padding: 0;
+				margin:0 auto;
+				display: table;
+				.powered-txt {
+					@include gridle(4);
+					@include gridle_float(none);
+					color: #FFF;
+					font:{size: 10px;}
+					display: table-cell;
+					vertical-align: middle;
+					padding: 0;
+					text:{align:right;}
+				}
+				.logo-powered {
+					@include gridle(2);
+					@include gridle_float(none);
+					padding:0;
+					display: table-cell;
+					vertical-align: middle;
+					svg {
+						width: 100%;
+						height: auto;
+						display: block;
+						fill: white;
+					} 
+				}
+			}	
+	    }
+	}    
 	.footer-content {
 		@include gridle(12);
 		@extend .no-paddings;
@@ -285,3 +664,43 @@
 		}	
 	}
 } 
+@keyframes movenews {
+    0% {
+		@include transform( perspective(800px) rotateX(-90deg));
+        opacity: 1;
+    } 
+    40% {
+        @include transform( perspective(800px) rotateX(30deg));
+        opacity: 1;
+    }
+    70% {
+         @include transform( perspective(800px) rotateX(-10deg));
+    }
+    100% {
+         @include transform( perspective(800px) rotateX(0deg));
+         opacity: 1;
+    }
+}
+@keyframes showDelay {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	50% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.animation-pop {
+	-moz-background-clip: padding;
+	-o-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #fff; 
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	-o-box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	box-shadow: 0 0 10px rgba(0,0,0,.18); 
+	@include animation(movenews 1.2s forwards);
+	@include transform-origin(top center);
+}

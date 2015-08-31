@@ -66,5 +66,22 @@ var feed = new Instafeed({
          //threshold:5
     });
 
+    $(window).scroll(function() {
+
+        if ($(this).scrollTop()>1200)
+         {
+            $('.bg-newsletter').show();
+            $('.newsletter-new-suscribe').show();
+            $('.content-poweredby').show(); 
+         }
+    });
+
+    $('.close-button-popups').click(function(){
+        $('.newsletter-new-suscribe').remove();
+        $('.bg-newsletter').remove();
+        $('.newsletter-footer').remove(); 
+    });
+
+
 
 }(jQuery));
