@@ -5073,34 +5073,6 @@ html {
     -o-transform: perspective(800px) rotateX(0deg);
     transform: perspective(800px) rotateX(0deg);
     opacity: 1; } }
-@keyframes showDelay {
-  90% {
-    visibility: hidden;
-    opacity: 0; }
-  100% {
-    visibility: visible;
-    opacity: 1; } }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-    transform: none; } }
-.fadeInUp {
-  -webkit-animation: fadeInUp;
-  -moz-animation: fadeInUp;
-  animation: fadeInUp; }
-
 .animation-pop {
   -moz-background-clip: padding;
   -o-background-clip: padding;
@@ -5520,7 +5492,8 @@ html {
               padding-left: 10px;
               padding-right: 10px;
               width: 100%;
-              float: none; }
+              float: none;
+              opacity: 0; }
               html.default .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .first-box-popups .content-first-box-pop .logo {
                 float: left;
                 direction: ltr;
@@ -5556,7 +5529,8 @@ html {
               float: none;
               font-size: 40px;
               font-weight: bold;
-              line-height: 15px; }
+              line-height: 15px;
+              opacity: 0; }
               html.default .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .first-box-popups .content-first-box-pop .title-content-p {
                 float: left;
                 direction: ltr;
@@ -5587,7 +5561,8 @@ html {
           padding-left: 10px;
           padding-right: 10px;
           width: 91.66667%;
-          float: none; }
+          float: none;
+          margin-bottom: 15px; }
           html.default .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups {
             float: left;
             direction: ltr;
@@ -5618,7 +5593,8 @@ html {
             padding-left: 10px;
             padding-right: 10px;
             width: 50%;
-            position: relative; }
+            position: relative;
+            opacity: 0; }
             html.default .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups .form-popups {
               float: left;
               direction: ltr;
@@ -6048,7 +6024,8 @@ html {
               padding-left: 10px;
               padding-right: 10px;
               width: 100%;
-              float: none; }
+              float: none;
+              opacity: 0; }
               html.default .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups .texto-popups .mensaje-popups {
                 float: left;
                 direction: ltr;
@@ -6154,14 +6131,17 @@ html {
                       @media screen and (max-width: 800px) {
                         .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups .texto-popups .social-popups ul li a i {
                           font-size: 18px; } }
+                .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups .texto-popups .social-popups ul .facebook-popups-animation {
+                  opacity: 0; }
+                .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups .texto-popups .social-popups ul .tw-popups-animation {
+                  opacity: 0; }
+                .footer .newsletter-new-suscribe .content-popups article .bg-content-popups .second-box-popups .texto-popups .social-popups ul .inst-popups-animation {
+                  opacity: 0; }
       .footer .newsletter-new-suscribe .content-popups .newsletter-footer {
         float: left;
         direction: ltr;
         padding-left: 10px;
         padding-right: 10px;
-        -webkit-animation: showDelay 5s ease-in;
-        -moz-animation: showDelay 5s ease-in;
-        animation: showDelay 5s ease-in;
         float: none;
         padding: 0;
         display: block;
@@ -6257,7 +6237,8 @@ html {
           float: right;
           padding: 0;
           margin: 0 auto;
-          display: table; }
+          display: table;
+          opacity: 0; }
           html.default .footer .newsletter-new-suscribe .content-popups .newsletter-footer .content-poweredby {
             float: left;
             direction: ltr;
@@ -7515,60 +7496,99 @@ html {
         margin-right: 30px;
         border-radius: 5px; }
 
-@keyframes movenews {
+.fade-in-up {
+  -webkit-animation: fade-in-up 0.5s ease-in forwards;
+  -moz-animation: fade-in-up 0.5s ease-in forwards;
+  animation: fade-in-up 0.5s ease-in forwards; }
+
+@keyframes fade-in-up {
   0% {
-    -webkit-transform: perspective(800px) rotateX(-90deg);
-    -moz-transform: perspective(800px) rotateX(-90deg);
-    -ms-transform: perspective(800px) rotateX(-90deg);
-    -o-transform: perspective(800px) rotateX(-90deg);
-    transform: perspective(800px) rotateX(-90deg);
-    opacity: 1; }
-  40% {
-    -webkit-transform: perspective(800px) rotateX(30deg);
-    -moz-transform: perspective(800px) rotateX(30deg);
-    -ms-transform: perspective(800px) rotateX(30deg);
-    -o-transform: perspective(800px) rotateX(30deg);
-    transform: perspective(800px) rotateX(30deg);
-    opacity: 1; }
-  70% {
-    -webkit-transform: perspective(800px) rotateX(-10deg);
-    -moz-transform: perspective(800px) rotateX(-10deg);
-    -ms-transform: perspective(800px) rotateX(-10deg);
-    -o-transform: perspective(800px) rotateX(-10deg);
-    transform: perspective(800px) rotateX(-10deg); }
+    transform: translateY(40px);
+    visibility: hidden;
+    opacity: 0; }
   100% {
-    -webkit-transform: perspective(800px) rotateX(0deg);
-    -moz-transform: perspective(800px) rotateX(0deg);
-    -ms-transform: perspective(800px) rotateX(0deg);
-    -o-transform: perspective(800px) rotateX(0deg);
-    transform: perspective(800px) rotateX(0deg);
+    transform: translateY(0);
+    visibility: visible !important;
+    opacity: 1 !important; } }
+@keyframes fade-in-left-sm {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
     opacity: 1; } }
+.fade-in-left-sm {
+  -webkit-animation: fade-in-left-sm 0.5s ease-in forwards;
+  -moz-animation: fade-in-left-sm 0.5s ease-in forwards;
+  animation: fade-in-left-sm 0.5s ease-in forwards; }
+
+@keyframes fade-in-left-sm {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+.fade-in-right-sm {
+  -webkit-animation: fade-in-right-sm 0.9s ease-in forwards;
+  -moz-animation: fade-in-right-sm 0.9s ease-in forwards;
+  animation: fade-in-right-sm 0.9s ease-in forwards; }
+
+@keyframes fade-in-right-sm {
+  0% {
+    transform: translateX(100px);
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+.bounceIn {
+  -webkit-animation: bounceIn 0.7s ease-in forwards;
+  -moz-animation: bounceIn 0.7s ease-in forwards;
+  animation: bounceIn 0.7s ease-in forwards;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn; }
+
+.showDelay {
+  -webkit-animation: showDelay 1.2s ease-in forwards;
+  -moz-animation: showDelay 1.2s ease-in forwards;
+  animation: showDelay 1.2s ease-in forwards; }
+
 @keyframes showDelay {
   0% {
     visibility: hidden;
     opacity: 0; }
-  50% {
+  100% {
     visibility: visible;
     opacity: 1; } }
-.animation-pop {
-  -moz-background-clip: padding;
-  -o-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #fff;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
-  -webkit-animation: movenews 1.2s forwards;
-  -moz-animation: movenews 1.2s forwards;
-  animation: movenews 1.2s forwards;
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
-  transform-origin: top center; }
-
 .newsletter-grid, .mymail-form .mymail-wrapper.mymail-email-wrapper, .mymail-form .mymail-wrapper.mymail-firstname-wrapper {
   float: left;
   direction: ltr;

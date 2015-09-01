@@ -27,8 +27,8 @@
 									<i class="fa fa-times"></i>
 								</div> 
 								<div class="first-box-popups">
-									<div class="content-first-box-pop animsition" data-animsition-in="fade-in-up">
-										<div class="logo">
+									<div class="content-first-box-pop">
+										<div class="logo"> 
 											<svg viewBox="0 0 300 95">
 												<use xlink:href="#svg_logo_white"/> 
 											</svg>
@@ -47,9 +47,9 @@
 										</div>
 										<div class="social-popups">
 											<ul>
-												<li><a href="https://www.facebook.com/chicfitdaily"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="https://twitter.com/chicfitdaily"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="https://instagram.com/chicfitdaily/"><i class="fa fa-instagram"></i></a></li>
+												<li class="facebook-popups-animation"><a href="https://www.facebook.com/chicfitdaily"><i class="fa fa-facebook"></i></a></li>
+												<li class="tw-popups-animation"><a href="https://twitter.com/chicfitdaily"><i class="fa fa-twitter"></i></a></li>
+												<li class="inst-popups-animation"><a href="https://instagram.com/chicfitdaily/"><i class="fa fa-instagram"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -152,8 +152,6 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/masonry.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.touchSwipe.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.transit.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/animsition.js"></script>
 
 		<?php wp_footer(); ?>
 		
