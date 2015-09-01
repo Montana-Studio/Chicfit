@@ -66,5 +66,38 @@ var feed = new Instafeed({
          //threshold:5
     });
 
+    $(window).scroll(function() {
+
+        if ($(this).scrollTop()>1200)
+         {
+            $('.bg-newsletter').show();
+            $('.newsletter-new-suscribe').show();
+
+            setTimeout(function(){
+                $('.content-first-box-pop .logo').addClass('fade-in-up'); }, 700);
+            setTimeout(function(){
+                $('.title-content-p').addClass('fade-in-up'); }, 1000);
+            setTimeout(function(){
+                $('.form-popups').addClass('fade-in-left-sm'); }, 1200);
+            setTimeout(function(){
+                $('.mensaje-popups').addClass('fade-in-right-sm'); }, 1400);
+            setTimeout(function(){
+                $('.facebook-popups-animation').addClass('bounceIn'); }, 2000);
+            setTimeout(function(){
+                $('.tw-popups-animation').addClass('bounceIn'); }, 2300);
+             setTimeout(function(){
+                $('.inst-popups-animation').addClass('bounceIn'); }, 2600); 
+             setTimeout(function(){
+                $('.content-poweredby').addClass('showDelay'); }, 2900); 
+         }
+    });
+
+    $('.close-button-popups').click(function(){
+        $('.newsletter-new-suscribe').remove();
+        $('.bg-newsletter').remove();
+        $('.newsletter-footer').remove(); 
+    });
+
+
 
 }(jQuery));

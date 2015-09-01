@@ -6,7 +6,76 @@
 		<!-- /wrapper -->
 			
 			<!-- footer -->
+
 			<footer class="footer" role="contentinfo">
+
+				<div class="bg-newsletter"></div> 
+				<div class="newsletter-new-suscribe"> 
+
+					<div class="content-popups animation-pop">
+
+						<?php $my_query = new WP_Query( 'p=1245' ); ?>
+
+						<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+
+							<div class="bg-image-popups"></div>
+							<div class="bg-color-popups" style="background-image:url('<?php the_field('background_image') ?>');"></div> 
+							<div class="bg-content-popups">
+								<div class="close-button-popups">
+									<i class="fa fa-times"></i>
+								</div> 
+								<div class="first-box-popups">
+									<div class="content-first-box-pop">
+										<div class="logo"> 
+											<svg viewBox="0 0 300 95">
+												<use xlink:href="#svg_logo_white"/> 
+											</svg>
+										</div>
+										<div class="title-content-p">
+											<?php the_title(); ?>
+										</div> 
+									</div>
+								</div>
+								<div class="second-box-popups">
+									<div class="form-popups"><?php echo do_shortcode('[newsletter_signup_form id=0]' ); ?></div>
+									<div class="texto-popups">
+										<div class="mensaje-popups">
+											<h2><?php the_field('titulo_contenido'); ?></h2>
+											<div class="mensaje-single"><?php the_content(); ?></div>
+										</div>
+										<div class="social-popups">
+											<ul>
+												<li class="facebook-popups-animation"><a href="https://www.facebook.com/chicfitdaily"><i class="fa fa-facebook"></i></a></li>
+												<li class="tw-popups-animation"><a href="https://twitter.com/chicfitdaily"><i class="fa fa-twitter"></i></a></li>
+												<li class="inst-popups-animation"><a href="https://instagram.com/chicfitdaily/"><i class="fa fa-instagram"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="newsletter-footer">
+								<div class="content-poweredby">
+									<div class="powered-txt">Powered By</div>
+									<div class="logo-powered">
+										<a href="http://mediatrends.cl/" target="_blank"> 
+											<svg viewBox="0 0 792 656.856">
+												<use xlink:href="#mediatrends-logo_popups" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							</article>
+							
+						<?php endwhile; ?>
+					</div>
+					
+				</div>	
+
+
+
 				<div class="cont-feedinstaram">
 					<h2><i class="fa fa-instagram"></i> INSTAGRAM <span>CHICFIT</span></h2>
 					<marquee behavior="scroll" scrollamount="1" direction="left" width="100%" speed="10000">
@@ -32,9 +101,7 @@
 						<div class="second-box">
 							<div class="newsletter">
 								<h4>Newsletter</h4>
-								<!--iframe width="100%" height="auto" allowTransparency="true" frameborder="0" scrolling="no" style="border:none" src="http://local.mediatrends/Chicfit/app/wp-content/plugins/myMail/form.php?id=0&s=1"></iframe-->
-							<?php echo do_shortcode('[newsletter_signup_form id=0]');
-?>
+								<?php echo do_shortcode('[newsletter_signup_form id=0]');?>
 							</div>
 						</div>
 						
