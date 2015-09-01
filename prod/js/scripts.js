@@ -72,7 +72,13 @@ var feed = new Instafeed({
          {
             $('.bg-newsletter').show();
             $('.newsletter-new-suscribe').show();
-            $('.content-poweredby').show(); 
+            $('.content-poweredby').show();
+
+            $('.content-first-box-pop .logo').animsition({
+                inClass: 'fade-in-up',
+                inDuration: 1500,
+                loading: false
+            });
          }
     });
 

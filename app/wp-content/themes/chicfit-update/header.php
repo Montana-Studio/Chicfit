@@ -15,6 +15,7 @@
 
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.min.css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animsition.css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/chicfit.css">
 		
 

@@ -15,16 +15,35 @@
          opacity: 1;
     }
 }
+
 @keyframes showDelay {
-	0% {
+	90% {
 		visibility: hidden;
 		opacity: 0;
 	}
-	50% {
+	100% {
 		visibility: visible;
 		opacity: 1;
 	}
 } 
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    @include transform( translate3d(0, 100%, 0));
+  }
+
+  100% {
+    opacity: 1;
+    @include transform(none);
+    transform: none;
+  }
+}
+
+.fadeInUp {
+	@include animation(fadeInUp);
+}
+
 .animation-pop {
 	-moz-background-clip: padding;
 	-o-background-clip: padding;
@@ -118,7 +137,7 @@
 				    	padding:{top:20px;bottom:20px;}
 				    	position: relative;
 				    	@include gridle_state(phoness-min) {
-							padding:{top:0;bottom:0;}
+							padding:{top:0;bottom:0;} 
 						}
 				    	.content-first-box-pop {
 				    		@include gridle(4);
@@ -342,50 +361,53 @@
 				    }	
 				}
 			}
-		}	
-		.newsletter-footer {
-	    	@include gridle(5, desktopess);  
-	    	@include gridle(7, notebook-min);
-	    	@include gridle(9, tabless-min);
-	    	@include gridle(11, phoness-min phoness);
-	    	@include animation(showDelay 4.0s ease-in);
-	    	@include gridle_float(none); 
-	    	padding:0;
-	    	display: block;
-	    	margin:0 auto;
-		    .content-poweredby {
-				@include gridle(2, desktopess noteboo-min tabless-min);  
-				@include gridle(3, phoness);  
-				@include gridle(5, phoness-min);  
-				@include gridle_float(right);
-				padding: 0;
-				margin:0 auto;
-				display: table;
-				.powered-txt {
-					@include gridle(4);
-					@include gridle_float(none);
-					color: #FFF;
-					font:{size: 10px;}
-					display: table-cell;
-					vertical-align: middle;
+			.newsletter-footer {
+		    	@include gridle(5, desktopess);  
+		    	@include gridle(7, notebook-min);
+		    	@include gridle(9, tabless-min);
+		    	@include gridle(11, phoness-min phoness);
+		    	@include animation(showDelay 5.0s ease-in);
+		    	@include gridle_float(none); 
+		    	padding:0;
+		    	display: block;
+		    	margin:0 auto;
+				position: absolute;
+				right: 0;
+				bottom: -42px;  
+			    .content-poweredby {
+					@include gridle(5, desktopess noteboo-min tabless-min);  
+					@include gridle(3, phoness);  
+					@include gridle(5, phoness-min);  
+					@include gridle_float(right);
 					padding: 0;
-					text:{align:right;}
-				}
-				.logo-powered {
-					@include gridle(2);
-					@include gridle_float(none);
-					padding:0;
-					display: table-cell;
-					vertical-align: middle;
-					svg {
-						width: 100%;
-						height: auto;
-						display: block;
-						fill: white;
-					} 
-				}
-			}	
-	    }
+					margin:0 auto;
+					display: table;
+					.powered-txt {
+						@include gridle(4);
+						@include gridle_float(none);
+						color: #FFF;
+						font:{size: 10px;}
+						display: table-cell;
+						vertical-align: middle;
+						padding: 0;
+						text:{align:right;}
+					}
+					.logo-powered {
+						@include gridle(2);
+						@include gridle_float(none);
+						padding:0;
+						display: table-cell;
+						vertical-align: middle;
+						svg {
+							width: 100%;
+							height: auto;
+							display: block;
+							fill: white;
+						} 
+					}
+				}	
+		    }
+		}	
 	}    
 	.footer-content {
 		@include gridle(12);

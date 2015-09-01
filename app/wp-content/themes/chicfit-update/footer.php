@@ -27,11 +27,11 @@
 									<i class="fa fa-times"></i>
 								</div> 
 								<div class="first-box-popups">
-									<div class="content-first-box-pop">
+									<div class="content-first-box-pop animsition" data-animsition-in="fade-in-up">
 										<div class="logo">
-										<svg viewBox="0 0 300 95">
-											<use xlink:href="#svg_logo_white"/> 
-										</svg>
+											<svg viewBox="0 0 300 95">
+												<use xlink:href="#svg_logo_white"/> 
+											</svg>
 										</div>
 										<div class="title-content-p">
 											<?php the_title(); ?>
@@ -55,23 +55,23 @@
 									</div>
 								</div>
 							</div>
-							
+							<div class="newsletter-footer">
+								<div class="content-poweredby">
+									<div class="powered-txt">Powered By</div>
+									<div class="logo-powered">
+										<a href="http://mediatrends.cl/" target="_blank"> 
+											<svg viewBox="0 0 792 656.856">
+												<use xlink:href="#mediatrends-logo_popups" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
 							</article>
 							
 						<?php endwhile; ?>
 					</div>
-					<div class="newsletter-footer">
-					<div class="content-poweredby">
-						<div class="powered-txt">Powered By</div>
-						<div class="logo-powered">
-							<a href="http://mediatrends.cl/" target="_blank"> 
-								<svg viewBox="0 0 792 656.856">
-									<use xlink:href="#mediatrends-logo_popups" />
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
+					
 				</div>	
 
 
@@ -152,6 +152,8 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/masonry.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.touchSwipe.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.transit.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/animsition.js"></script>
 
 		<?php wp_footer(); ?>
 		
