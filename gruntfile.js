@@ -84,7 +84,10 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                report: 'min'
+                report: 'min',
+                files: {
+                    '<%= www %>/<%= jsout %>': ['<%= dist %>/<%= js %>']
+                }
             },
             compile: {
                 files: {

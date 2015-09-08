@@ -82,13 +82,13 @@
 			@include gridle_state(phoness-min) {
 				margin:{top:20px;}
 			}
-			article {
-				.bg-color-popups {
+			.bg-color-popups {
 					position: absolute;
 				    height: 100%;
 				    width: 100%;
 				    z-index: 0;
 					background-size: cover;
+					background-image: url("../img/ignacia.jpg")
 				}
 				.bg-content-popups {
 					@include gridle(12);
@@ -346,7 +346,6 @@
 						}
 				    }	
 				}
-			}
 			.newsletter-footer {
 		    	@include gridle(5, desktopess);  
 		    	@include gridle(7, notebook-min);
@@ -385,7 +384,7 @@
 						display: table-cell;
 						vertical-align: middle;
 						svg {
-							width: 100%;
+							width: 80%;
 							height: auto;
 							display: block;
 							fill: white;

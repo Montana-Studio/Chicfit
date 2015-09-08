@@ -13,7 +13,7 @@
 					</svg>
 				</div>
 				<div class="title-content-p">
-					title
+					NEWSLETTER
 				</div>
 			</div>
 		</div>

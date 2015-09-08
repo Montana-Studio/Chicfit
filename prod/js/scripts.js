@@ -74,9 +74,9 @@ var feed = new Instafeed({
             $('.newsletter-new-suscribe').show();
 
             setTimeout(function(){
-                $('.content-first-box-pop .logo').addClass('fade-in-up'); }, 700);
+                $('.content-first-box-pop .logo').animate({opacity:1},{duration:500}); }, 700);
             setTimeout(function(){
-                $('.title-content-p').addClass('fade-in-up'); }, 1000);
+                $('.title-content-p').animate({opacity:1},{duration:500}); }, 1000);
             setTimeout(function(){
                 $('.form-popups').addClass('fade-in-left-sm'); }, 1200);
             setTimeout(function(){
