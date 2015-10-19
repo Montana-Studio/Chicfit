@@ -1,7 +1,6 @@
 <?php /* Template Name: Unsubscribe */ ?>
 <?php get_header(); ?>
 
-
 <div class="content-page-news unsubscribe-wrap" style="background:url('<?php echo get_template_directory_uri(); ?>/img/bg-newsletter-new.jpg?>')">
 
 	<div class="logo-title">

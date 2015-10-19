@@ -4206,6 +4206,25 @@ html {
     background-size: cover !important; }
     .content-page-news.content-news-form .logo-title {
       position: relative; }
+  .content-page-news.confirmacion-user {
+    position: relative;
+    background-size: cover !important; }
+    .content-page-news.confirmacion-user .logo-title {
+      padding: 20px 10px;
+      position: relative; }
+    .content-page-news.confirmacion-user .msg-bienvenida {
+      position: relative;
+      top: 0;
+      padding-top: 60px;
+      padding-bottom: 85px; }
+      @media screen and (max-width: 1024px) {
+        .content-page-news.confirmacion-user .msg-bienvenida {
+          padding-top: 20px;
+          padding-bottom: 50px; } }
+      @media screen and (max-width: 480px) {
+        .content-page-news.confirmacion-user .msg-bienvenida {
+          padding-top: 5px;
+          padding-bottom: 25px; } }
   .content-page-news img {
     height: auto;
     width: 100%;
@@ -4365,9 +4384,17 @@ html {
         .content-page-news .msg-bienvenida.msg-nuevo-registro {
           padding-left: 0;
           padding-right: 0; } }
+      @media screen and (max-width: 1024px) {
+        .content-page-news .msg-bienvenida.msg-nuevo-registro {
+          width: 91.66667%; } }
       @media screen and (max-width: 480px) {
         .content-page-news .msg-bienvenida.msg-nuevo-registro {
           width: 100%; } }
+      @media screen and (max-width: 1024px) {
+        .content-page-news .msg-bienvenida.msg-nuevo-registro {
+          display: block;
+          margin-left: auto;
+          margin-right: auto; } }
       @media screen and (max-width: 480px) {
         .content-page-news .msg-bienvenida.msg-nuevo-registro {
           margin-top: 50px;
@@ -4499,7 +4526,7 @@ html {
         .content-page-news .msg-bienvenida .formulario-de-baja .mymail-form-unsubscribe .mymail-email-wrapper input {
           border: 1px solid #fff;
           padding: 8px 4px;
-          color: #fff; }
+          color: #fff !important; }
           @media screen and (max-width: 1024px) {
             .content-page-news .msg-bienvenida .formulario-de-baja .mymail-form-unsubscribe .mymail-email-wrapper input {
               padding: 6px 4px; } }
@@ -4598,6 +4625,10 @@ html {
         .content-page-news .msg-bienvenida .formulario-nuevo-news {
           padding-left: 0;
           padding-right: 0; } }
+      @media screen and (max-width: 1024px) {
+        .content-page-news .msg-bienvenida .formulario-nuevo-news {
+          position: relative;
+          margin-bottom: 35px; } }
       .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-firstname-wrapper {
         float: left;
         direction: ltr;
@@ -4611,6 +4642,9 @@ html {
         @media screen and (max-width: 480px) {
           .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-firstname-wrapper {
             width: 100%; } }
+        @media screen and (max-width: 480px) {
+          .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-firstname-wrapper {
+            padding-left: 0 !important; } }
         .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-firstname-wrapper label {
           color: #fff; }
           @media screen and (max-width: 480px) {
@@ -4619,7 +4653,8 @@ html {
               padding-bottom: 0px; } }
         .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-firstname-wrapper input {
           border: 1px solid #fff;
-          padding: 8px 4px; }
+          padding: 8px 4px;
+          color: #fff; }
           @media screen and (max-width: 1024px) {
             .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-firstname-wrapper input {
               padding: 6px 4px; } }
@@ -4631,7 +4666,8 @@ html {
         direction: ltr;
         padding-left: 10px;
         padding-right: 10px;
-        width: 41.66667%; }
+        width: 41.66667%;
+        padding-left: 0; }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
           .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper {
             padding-left: 0;
@@ -4639,6 +4675,12 @@ html {
         @media screen and (max-width: 480px) {
           .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper {
             width: 100%; } }
+        @media screen and (max-width: 1024px) {
+          .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper {
+            padding-left: 0 !important; } }
+        @media screen and (max-width: 480px) {
+          .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper {
+            padding-left: 0 !important; } }
         .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper label {
           color: #fff; }
           @media screen and (max-width: 480px) {
@@ -4647,7 +4689,8 @@ html {
               padding-bottom: 0px; } }
         .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper input {
           border: 1px solid #fff;
-          padding: 8px 4px; }
+          padding: 8px 4px;
+          color: #fff; }
           @media screen and (max-width: 1024px) {
             .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-email-wrapper input {
               padding: 6px 4px; } }
@@ -4661,7 +4704,8 @@ html {
         padding-right: 10px;
         width: 16.66667%;
         position: absolute;
-        float: left; }
+        float: left;
+        bottom: 0; }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
           .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-submit-wrapper {
             padding-left: 0;
@@ -4671,7 +4715,8 @@ html {
             width: 100%; } }
         @media screen and (max-width: 480px) {
           .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-submit-wrapper {
-            padding: 0 10px !important;
+            padding-right: 10px !important;
+            padding-left: 0 !important;
             position: relative; } }
         .content-page-news .msg-bienvenida .formulario-nuevo-news .mymail-submit-wrapper input {
           background: #fff;

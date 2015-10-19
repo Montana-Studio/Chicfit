@@ -2,8 +2,7 @@
 <?php get_header(); ?>
 
 
-<div class="content-page-news">
-	<img src="<?php echo get_template_directory_uri(); ?>/img/bg-newsletter-page.jpg?>" alt="">
+<div class="content-page-news confirmacion-user" style="background:url('<?php echo get_template_directory_uri(); ?>/img/bg-newsletter-page.jpg?>')">
 
 	<div class="logo-title">
 		<div class="logo">
